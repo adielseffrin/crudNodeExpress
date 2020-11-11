@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Lista de usuários </title>
+</head>
+<body>
+  <h1>Lista de usuários</h1>
+  <ul>
+    <% usuarios.forEach(function(user){ %>
+      <li><b><%= user._nome %></b>: <%= user._funcao %></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
